@@ -29,8 +29,8 @@ public class HeaderMain {
        System.out.println("*******************************                             ********************************");
        System.out.println("___________________________________________"+ hora + ":" + minutos + ":" + segundos + ""
                + "__________________________________________");
-       System.out.println(" ████████████████████████████████████████████████████████   ");
-       System.out.println();
+       JSystem.out.printColorln(JSystem.ColorBg.yellow, JSystem.Color.black,"                                                                                             ");
+      
        }
    public void headerIniciarSesion(){
        JSystem.out.printColorln(JSystem.Color.cyan, "____________________________________________________________________________________________");
@@ -63,6 +63,22 @@ public class HeaderMain {
        System.out.println("\t\t\t\t\t**************");  
    }
    
+   public void headerNewAcount(){
+       JSystem.out.printColorln(JSystem.Color.cyan, "____________________________________________________________________________________________");
+       JSystem.out.printColorln(JSystem.Color.cyan, "____________________________________________________________________________________________");
+       System.out.println("\t\t\t\t\t**************");
+       System.out.println("\t\t\t\t\t NUEVA CUENTA");    
+       System.out.println("\t\t\t\t\t**************");  
+   }
+   
+   public void headerMyAcount(){
+       JSystem.out.printColorln(JSystem.Color.cyan, "____________________________________________________________________________________________");
+       JSystem.out.printColorln(JSystem.Color.cyan, "____________________________________________________________________________________________");
+       System.out.println("\t\t\t\t\t**************");
+       System.out.println("\t\t\t\t      CUENTAS PERSONALES");    
+       System.out.println("\t\t\t\t\t**************");  
+   }
+   
    
    public void EndSoftware(){
     JSystem.out.printColorln(JSystem.ColorBg.red, JSystem.Color.white,"                                                                                            ");
@@ -87,5 +103,6 @@ public class HeaderMain {
     JSystem.out.printColorln(JSystem.ColorBg.red, JSystem.Color.cyan,"                                                                                            ");
     JSystem.out.printColorln(JSystem.ColorBg.red, JSystem.Color.cyan,"                                                                                            ");
     JSystem.out.printColorln(JSystem.ColorBg.red, JSystem.Color.cyan,"                                                                                            ");
+    System.exit(0);
    }
 }

@@ -41,6 +41,12 @@ public class ValidarEmail {
             } else {
                 callDisplayMetods.QuestionVerificationEmailRecover();
             }
+        }else if("NC".equalsIgnoreCase(opt)){
+            if (mather.find() == true) {
+                //No le pondre nada para que continue la app.
+            } else {
+                callDisplayMetods.QuestionVerificationNewAcount();
+            }
         }
     }
 
