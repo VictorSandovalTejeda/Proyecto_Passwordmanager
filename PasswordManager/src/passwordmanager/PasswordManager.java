@@ -5,6 +5,9 @@
  */
 package passwordmanager;
 
+import passwordmanager.Display.Display;
+import passwordmanager.Display.HeaderMain;
+
 /**
  *
  * @author Alumnos
@@ -16,6 +19,10 @@ public class PasswordManager {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        HeaderMain callHeader=new HeaderMain();
+        Display callDisplay = new Display();
+        callHeader.header();
+        callDisplay.Login();
     }
     
 }
